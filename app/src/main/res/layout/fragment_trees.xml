@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Trees.TreesFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E3E3E3"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Buscar por Nombre del Árbol"
+                android:paddingBottom="5dp"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_tree">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tree_name_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/btnBuscarArbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:backgroundTint="?attr/colorPrimary"
+                android:src="@drawable/ic_search"
+                app:tint="@color/white" />
+            <!-- <Button
+                 android:id="@+id/btnBuscarArbol"
+                 android:layout_width="0dp"
+                 android:layout_weight="0.2"
+                 android:layout_height="match_parent"
+
+                 />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lv_trees_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:divider="@null"
+                tools:listitem="@layout/trees_item">
+
+            </ListView>
+            <!--<androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lv_trees_list"
+                android:scrollbars="vertical"
+                tools:listitem="@layout/trees_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>-->
+        </LinearLayout>
+        >
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAgregarArbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:src="@drawable/ic_add"
+        app:tint="@android:color/white" />
+
+
+</FrameLayout>

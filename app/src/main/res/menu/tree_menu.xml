@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/opTreeShow"
+        android:enabled="true"
+        android:icon="@drawable/ic_tree"
+        android:title="Detalle de Árbol" />
+    <item
+        android:id="@+id/opTreeEvo"
+        android:enabled="true"
+        android:icon="@drawable/ic_evolution"
+        android:title="Evoluciones" />
+    <item
+        android:id="@+id/opTreePRo"
+        android:enabled="true"
+        android:icon="@drawable/ic_procedure"
+        android:title="Procedimientos" />
+    <item
+        android:id="@+id/opTreeMap"
+        android:enabled="true"
+        android:icon="@drawable/ic_maps"
+        android:title="Mapa" />
+</menu>
